@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CalculatorCorn.MainPage">
+    
+    <StackLayout Padding="5, 10, 5, 5" BackgroundColor="LightGray">
+        <Frame x:Name="CalcWindow"
+               BackgroundColor="WhiteSmoke"
+               IsVisible="true">
+            <Label 
+                   x:Name="labelCalc"
+                   Text="0"
+                   FontSize="36"
+                   FontAttributes="Bold"
+                   HorizontalOptions="End">
+            </Label>
+        </Frame>
+        
+
+        
+        <Grid >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="100"/>
+                <RowDefinition Height="100"/>
+                <RowDefinition Height="100"/>
+                <RowDefinition Height="100"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Button 
+                x:Name="Button9"
+                Clicked="ButtonOne_Clicked"
+                Grid.Row="0"
+                Grid.Column="0"
+                Text="9"
+                FontSize="43"               
+                BackgroundColor="Khaki"
+                
+            />
+            <Button 
+                x:Name="Button8"
+                Grid.Row="0"
+                Grid.Column="1"
+                Text="8"
+                FontSize="43"              
+                BackgroundColor="Khaki"
+                Clicked="ButtonOne_Clicked"
+            />
+            <Button 
+                x:Name="Button7"
+                Grid.Row="0"
+                Grid.Column="2"
+                Text="7"
+                FontSize="43"             
+                BackgroundColor="Khaki"
+                Clicked="ButtonOne_Clicked"
+            />
+            <Button 
+                x:Name="Button6"
+                Grid.Row="1"
+                Grid.Column="0"
+                Text="6"
+                FontSize="43"              
+                BackgroundColor="Khaki"
+                Clicked="ButtonOne_Clicked"
+            />
+            <Button 
+                x:Name="Button5"
+                Grid.Row="1"
+                Grid.Column="1"
+                Text="5"
+                FontSize="43"              
+                BackgroundColor="Khaki"
+                Clicked="ButtonOne_Clicked"
+            />
+            <Button 
+                x:Name="Button4"
+                Grid.Row="1"
+                Grid.Column="2"
+                Text="4"
+                FontSize="43"                
+                BackgroundColor="Khaki"
+                Clicked="ButtonOne_Clicked"
+            />
+            <Button 
+                x:Name="Button3"
+                Grid.Row="2"
+                Grid.Column="0"
+                Text="3"
+                FontSize="43"
+                BackgroundColor="Khaki"
+                Clicked="ButtonOne_Clicked"
+            />
+            <Button 
+                x:Name="Button2"
+                Grid.Row="2"
+                Grid.Column="1"
+                Text="2"
+                FontSize="43"
+                BackgroundColor="Khaki"
+                Clicked="ButtonOne_Clicked"
+            />
+            <Button 
+                x:Name="Button1"
+                Grid.Row="2"
+                Grid.Column="2"
+                Text="1"
+                FontSize="43"
+                BackgroundColor="Khaki"
+                Clicked="ButtonOne_Clicked"
+            />
+            <Button 
+                x:Name="Delete"
+                Grid.Row="3"
+                Grid.Column="0"
+                FontSize="43"
+                Text="C"
+                BackgroundColor="Khaki"
+                Clicked="Delete_Clicked"
+            />
+            <Button 
+                x:Name="Button0"
+                Grid.Row="3"
+                Grid.Column="1"
+                Text="0"
+                FontSize="43"
+                BackgroundColor="Khaki"
+                Clicked="ButtonOne_Clicked"
+            />
+            <Button 
+                x:Name="ButtonDot"
+                Grid.Row="3"
+                Grid.Column="2"
+                Text="."
+                FontSize="43"
+                BackgroundColor="Khaki"
+                Clicked="ButtonOne_Clicked"
+            /> 
+        </Grid>
+        <Button  
+            x:Name="Calcuation"
+            Text="Расчитать"
+            FontSize="43"
+            BackgroundColor="Khaki"  
+            Clicked="Calcuation_Clicked"
+            />
+        <Button
+            x:Name="DbInfo"
+            Text="История расчетов"
+            WidthRequest="100"
+            HeightRequest="100"
+            BackgroundColor="Khaki"
+            FontSize="17"
+            FontAttributes="Bold"
+            HorizontalOptions="End"
+            Clicked="DbInfo_Clicked"
+            ></Button>
+    </StackLayout>
+
+
+</ContentPage>
